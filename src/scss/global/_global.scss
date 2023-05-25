@@ -1,0 +1,189 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+:root 
+{
+	--index: calc(1vw + 1vh);
+}
+  
+html 
+{
+	scroll-behavior: smooth;
+	font-size: calc(var(--index) * 0.33333);
+
+}
+body
+{
+	font-family: 'Futura New';
+}
+
+
+ul,
+ol,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	padding: 0;
+}
+
+h1,
+.h1
+{
+	font-weight: 600;
+	font-size: 6.4rem;
+	line-height: 100%;
+}
+h2,
+.h2
+{
+	font-weight: 600;
+	font-size: 4.8rem;
+	line-height: 100%;
+}
+h3,
+.h3
+{
+	font-weight: 600;
+	font-size: 3.6rem;
+	line-height: 100%;
+}
+h4,
+.h4
+{
+	font-weight: 600;
+	font-size: 2.6rem;
+	line-height: 100%;
+}
+h5,
+.h5
+{
+	font-weight: 600;
+	font-size: 2.4rem;
+	line-height: 100%;
+}
+p,
+.p
+{
+	font-weight: 300;
+	font-size: 2rem;
+	line-height: 150%;
+}
+
+.fw-800
+{
+	font-weight: 800;
+}
+.fw-700
+{
+	font-weight: 700;
+}
+.fw-600
+{
+	font-weight: 600;
+}
+.fw-500
+{
+	font-weight: 500;
+}
+.fw-400
+{
+	font-weight: 400;
+}
+.fw-300
+{
+	font-weight: 300;
+}
+
+
+.mb-50
+{
+	margin-bottom: 5rem;
+}
+.mb-70
+{
+	margin-bottom: 7rem;
+}
+.pt-100
+{
+	padding-top: 10rem;
+}
+.pb-100
+{
+	padding-bottom: 10rem;
+}
+.pt-50
+{
+	padding-top: 5rem;
+}
+.pb-50
+{
+	padding-bottom: 5rem;
+}
+.py-50
+{
+	padding: 5rem 0;
+}
+.py-100
+{
+	padding: 10rem 0;
+}
+
+@media(min-width:768px)
+{
+	.mb-md-50
+	{
+		margin-bottom: 5rem;
+	}
+	.mb-md-70
+	{
+		margin-bottom: 7rem;
+	}
+	.pt-md-100
+	{
+		padding-top: 10rem;
+	}
+	.pb-md-100
+	{
+		padding-bottom: 10rem;
+	}
+	.pt-md-50
+	{
+		padding-top: 5rem;
+	}
+	.pb-md-50
+	{
+		padding-bottom: 5rem;
+	}
+	.py-md-50
+	{
+		padding: 5rem 0;
+	}
+	.py-md-100
+	{
+		padding: 10rem 0;
+	}
+}
+
+.row
+{
+	margin-right: -1.5rem;
+    margin-left: -1.5rem;
+}
+.row>* {
+    
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+}
+.pattern-main
+{
+	background: var(--secondary) url('/img/pattern-main.png') top center/170rem;
+}

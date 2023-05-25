@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+@@include('components/page-blocks/_head.html',{
+"lang":"en",
+"title":"UGAIK",
+"keywords":"",
+"favicon":"img/favicons/favicon",
+})
+
+<body>
+
+	<main class="main">
+		@@include('components/page-blocks/header/_header.html')
+		@@include('components/page-blocks/sidebar/_sidebar.html')
+		<div class="main-wrap">
+			<section class="main-content pattern-main">
+				@@include('components/bem-blocks/about/aboutProjectTop/_aboutProjectTop.html')
+				@@include('components/bem-blocks/about/aboutMap/_aboutMap.html')
+				@@include('components/bem-blocks/about/aboutProjectBottom/_aboutProjectBottom.html')
+				@@include('components/bem-blocks/about/aboutPlan/_aboutPlan.html')
+				@@include('components/bem-blocks/about/aboutGallery/_aboutGallery.html')
+				@@include('components/page-blocks/footer/_footer.html')
+			</section>
+		</div>
+	</main>
+	@@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>
+

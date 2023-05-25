@@ -1,0 +1,147 @@
+.side-menu
+{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    background-color: #492E16;
+    padding: 50px 40px 45px;
+    &__nav
+    {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        a
+        {
+            font-size: 2.2rem;
+            text-decoration: none;
+            line-height: 1.2em;
+            color: #FFF;
+            transition: .2s;
+            &.active,
+            &:hover
+            {
+                color: var(--secondary);
+            }
+        }
+    }
+
+    &__top
+    {
+        display: flex;
+        flex-direction: column;
+        row-gap: 27px;
+        margin-bottom: 41px;
+        &-logo
+        {
+            width: 100%;
+            height: 57px;
+            img
+            {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+        &-call
+        {
+            .text
+            {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 1.2em;
+                color: var(--secondary);
+            }
+            .phone
+            {
+                display: block;
+                text-decoration: none;
+                font-size: 26px;
+                line-height: 33px;
+                line-height: 1.2em;
+                color: #FFFFFF;
+                overflow: visible;
+                &::after
+                {
+                    content: '';
+                    display: block;
+                    width: 0;
+                    height: 1px;
+                    background-color: #FFFFFF;
+                    transition: .2s;
+                }
+                &:hover 
+                {
+                    &::after
+                    {
+                        width: 13ch;
+                    }
+                    
+                }
+            }
+            .btn
+            {
+                font-size: 18px;
+                margin-top: 10px;
+            }
+        }
+    }
+
+    &__links
+    {
+        width: 100%;
+        margin-top: auto;
+        &-logo
+        {
+            height: 58px;
+            width: 100%;
+            img
+            {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+}
+
+@media (max-width:1200px) {
+    .side-menu
+    {
+        padding: 20px 20px 65px 49px;
+        position: absolute;
+        right: 0;
+        top: 60px;
+        width: 252px;
+        height: 650px;
+        align-items: flex-end;
+        display: none;
+        z-index: 999;
+        &.active
+        {
+            display: flex;
+        }
+        &__top-call
+        {
+            .phone
+            {
+                font-size: 24px;
+                text-align: right;
+            }
+        }
+        &__nav
+        {
+            row-gap: 10px;
+            a
+            {
+                font-size: 16px;
+                text-align: right;
+            }
+        }
+        &__top-logo
+        {
+            display: none;
+        }
+    }
+    
+}
