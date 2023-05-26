@@ -1,0 +1,105 @@
+#aboutContacts
+{
+    position: relative;
+}
+#aboutContactsMap
+{
+    height: 800px;
+}
+.about-contacts__card
+{
+    padding: 7.4rem 4.7rem;
+    position: absolute;
+    z-index: 100;
+    left: 17.2rem;
+    top: 100px;
+    width: 49.5rem;
+    background: var(--primary);
+    border-radius: 40px;
+    &::after
+    {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 28rem;
+        height: 2.15rem;
+        background: url('img/pattern-form.png');
+    }
+    &-title
+    {
+        margin-bottom: 10px;
+        font-weight: 700;
+        font-size: 4rem;
+        line-height: 5.1rem;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    &-text
+    {
+        margin-bottom: 40px;
+        font-weight: 300;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    &-form
+    {
+        input
+        {
+            margin-bottom: 20px;
+            
+        }
+        .btn
+        {
+            margin: 20px 0 20px;
+            width: 100%;
+        }
+        span
+        {
+            display: block;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 1.2em;
+            text-align: center;
+            color: #FFFFFF;
+        }
+    }
+}
+@media (max-width:768px) {
+    .about-contacts__card
+    {
+        position: static;
+        width: 100%;
+        padding: 40px 20px;
+        border-radius: 20px;
+        &-text
+        {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        &-title
+        {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        &-form
+        {
+            span
+            {
+                font-size: 10px;
+                width: 80%;
+                margin: 0 auto;
+            }
+        }
+    }
+    #aboutContactsMap
+    {
+        height: 440px;
+    }
+}
+@media (max-width:576px) {
+    #aboutContactsMap
+    {
+        height: 320px;
+    }
+}

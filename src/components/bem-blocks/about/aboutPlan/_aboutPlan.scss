@@ -2,3 +2,13 @@
 {
     background: var(--primary) url('/img/pattern-plan.png') top/170rem;
 }
+.main-plan__img
+{
+    height: 80rem;
+    img
+    {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+}

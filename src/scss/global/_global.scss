@@ -20,7 +20,14 @@ body
 	font-family: 'Futura New';
 }
 
-
+a
+{
+	color: inherit;
+	&:hover
+	{
+		color: inherit;
+	}
+}
 ul,
 ol,
 li,
@@ -103,7 +110,10 @@ p,
 	font-weight: 300;
 }
 
-
+.mb-30
+{
+	margin-bottom: 3rem;
+}
 .mb-50
 {
 	margin-bottom: 5rem;
@@ -112,6 +122,15 @@ p,
 {
 	margin-bottom: 7rem;
 }
+.py-50
+{
+	padding: 5rem 0;
+}
+.py-100
+{
+	padding: 10rem 0;
+}
+
 .pt-100
 {
 	padding-top: 10rem;
@@ -128,17 +147,49 @@ p,
 {
 	padding-bottom: 5rem;
 }
-.py-50
+
+.row
 {
-	padding: 5rem 0;
+	margin-right: -1.5rem;
+    margin-left: -1.5rem;
 }
-.py-100
+.row>* {
+    
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+}
+.pattern-main
 {
-	padding: 10rem 0;
+	background: var(--secondary) url('/img/pattern-main.png') top center/170rem;
 }
 
-@media(min-width:768px)
+
+
+@media (min-width: 1200px) {
+	.container
+	{
+		max-width: 878px;
+	}
+}
+@media (min-width: 1400px) {
+	.container
+	{
+		max-width: 1078px;
+	}
+}
+@media (min-width: 1600px) {
+	.container
+	{
+		max-width: 1278px;
+	}
+}
+
+@media(max-width:768px)
 {
+	.mb-md-30
+	{
+		margin-bottom: 3rem;
+	}
 	.mb-md-50
 	{
 		margin-bottom: 5rem;
@@ -171,19 +222,45 @@ p,
 	{
 		padding: 10rem 0;
 	}
+
+	h1,
+	.h1
+	{
+		font-size: 20px;
+	}
+	// h2,
+	// .h2
+	// {
+	// }
+	// h3,
+	// .h3
+	// {
+	// }
+	h4,
+	.h4
+	{
+		font-size: 18px;
+	}
+	// h5,
+	// .h5
+	// {
+	// }
+	p,
+	.p
+	{
+		font-size: 16px;
+		line-height: 130%;
+	}
+	.pattern-main
+	{
+		background: var(--secondary);
+	}
 }
 
-.row
-{
-	margin-right: -1.5rem;
-    margin-left: -1.5rem;
-}
-.row>* {
-    
-    padding-right: 1.5rem;
-    padding-left: 1.5rem;
-}
-.pattern-main
-{
-	background: var(--secondary) url('/img/pattern-main.png') top center/170rem;
+@media (max-width: 576px) {
+	.container
+	{
+		max-width: 100%;
+		padding: 0 20px;
+	}
 }
