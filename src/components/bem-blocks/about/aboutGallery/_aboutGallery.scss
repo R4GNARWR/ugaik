@@ -31,3 +31,20 @@
         }
     }
 }
+
+
+@media (max-width: 768px) {
+    .about-gallery
+{
+    &__slider
+    {
+        height: 320px;
+    }
+    &__title
+    {
+        left: 20px;
+        top: 31px;
+    }
+
+}
+}

@@ -41,3 +41,26 @@
         }
     }
 }
+
+@media (max-width:768px) {
+    .about
+{
+    &-label
+    {
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+    &-img
+    {
+        margin-bottom: 20px;
+        &.border-left img
+        {
+            border-radius: 40px;
+        }
+        &.border-right img
+        {
+            border-radius: 40px;
+        }
+    }
+}
+}

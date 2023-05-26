@@ -107,7 +107,11 @@
         }
         &__nav
         {
-            display: none;
+            &-prev,
+            &-next
+            {
+                display: none;
+            }
         }
 
         &__pagination

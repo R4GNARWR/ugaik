@@ -1,5 +1,18 @@
-#main-map
+#mainMap
 {
     height: 700px;
     background-color: black;
+}
+@media (max-width: 768px) {
+    #mainMap
+    {
+        height: 440px;
+    }
+}
+
+@media (max-width: 576px) {
+    #mainMap
+    {
+        height: 320px;
+    }
 }
