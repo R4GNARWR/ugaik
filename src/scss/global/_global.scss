@@ -84,7 +84,14 @@ p,
 	font-size: 2rem;
 	line-height: 150%;
 }
-
+.lh-150
+{
+	line-height: 1.5em;
+}
+.w-ft
+{
+	width: fit-content;
+}
 .fw-800
 {
 	font-weight: 800;
@@ -110,6 +117,10 @@ p,
 	font-weight: 300;
 }
 
+.text-primary
+{
+	color: var(--primary) !important;
+}
 .mb-30
 {
 	margin-bottom: 3rem;
@@ -122,6 +133,23 @@ p,
 {
 	margin-bottom: 7rem;
 }
+.mb-100
+{
+	margin-bottom: 10rem;
+}
+.mt-30
+{
+	margin-top: 3rem;
+}
+.mt-50
+{
+	margin-top: 5rem;
+}
+.mt-70
+{
+	margin-top: 7rem;
+}
+
 .py-50
 {
 	padding: 5rem 0;
@@ -163,29 +191,68 @@ p,
 	background: var(--secondary) url('/img/pattern-main.png') top center/170rem;
 }
 
+.bg-primary
+{
+	background-color: var(--primary) !important;
+}
 
 
 @media (min-width: 1200px) {
-	.container
+	.container,
+	.container-md
 	{
 		max-width: 878px;
 	}
+	.py-xl-100
+	{
+		padding: 10rem 0;
+	}
 }
 @media (min-width: 1400px) {
-	.container
+	.container,
+	.container-md
 	{
 		max-width: 1078px;
 	}
 }
 @media (min-width: 1600px) {
-	.container
+	.container,
+	.container-md
 	{
 		max-width: 1278px;
 	}
 }
 
-@media(max-width:768px)
+@media(min-width:768px)
 {
+	.w-md-ft
+	{
+		width: fit-content;
+	}
+	.fw-800
+	{
+		font-weight: 800;
+	}
+	.fw-md-700
+	{
+		font-weight: 700;
+	}
+	.fw-md-600
+	{
+		font-weight: 600;
+	}
+	.fw-md-500
+	{
+		font-weight: 500;
+	}
+	.fw-md-400
+	{
+		font-weight: 400;
+	}
+	.fw-md-300
+	{
+		font-weight: 300;
+	}
 	.mb-md-30
 	{
 		margin-bottom: 3rem;
@@ -198,6 +265,19 @@ p,
 	{
 		margin-bottom: 7rem;
 	}
+	.mt-md-30
+	{
+		margin-top: 3rem;
+	}
+	.mt-md-50
+	{
+		margin-top: 5rem;
+	}
+	.mt-md-70
+	{
+		margin-top: 7rem;
+	}
+
 	.pt-md-100
 	{
 		padding-top: 10rem;
@@ -223,19 +303,29 @@ p,
 		padding: 10rem 0;
 	}
 
+}
+@media (max-width: 768px) {
+	.container-md
+	{
+		max-width: 100%;
+		padding: 0;
+	}
+
 	h1,
 	.h1
 	{
 		font-size: 20px;
 	}
-	// h2,
-	// .h2
-	// {
-	// }
-	// h3,
-	// .h3
-	// {
-	// }
+	h2,
+	.h2
+	{
+		font-size: 20px;
+	}
+	h3,
+	.h3
+	{
+		font-size: 16px;
+	}
 	h4,
 	.h4
 	{
@@ -250,10 +340,6 @@ p,
 	{
 		font-size: 16px;
 		line-height: 130%;
-	}
-	.pattern-main
-	{
-		background: var(--secondary);
 	}
 }
 

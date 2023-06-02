@@ -1,6 +1,7 @@
 const plugins = [
   'node_modules/bootstrap/scss/bootstrap.scss',
   'node_modules/swiper/swiper-bundle.min.css',
+  'node_modules/ion-rangeslider/css/ion.rangeSlider.min.css'
 ];
 
 const {

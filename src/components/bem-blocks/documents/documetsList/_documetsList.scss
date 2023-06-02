@@ -1,0 +1,147 @@
+.documents-list__top
+{
+    display: flex;
+    column-gap: 30px;
+}
+.documents-list__top-img
+{
+    padding: 1.2rem 8.8rem;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #B19F86;
+    border-radius: 40px;
+    img
+    {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+.documents-list
+{
+    margin-top: 10rem;
+    &__header
+    {
+        display: grid;
+        grid-template-columns: 1.3fr 1fr;
+        padding-bottom: 30px;
+        &-text
+        {
+            font-weight: 600;
+            font-size: 2.6rem;
+            line-height: 3.3rem;
+            color: #492E16;
+        }
+    }
+
+    &__item
+    {
+        border-bottom: 1px solid #492E16;
+    }
+    &__title
+    {
+        padding: 2.2rem 0;
+        font-weight: 300;
+        font-size: 3.6rem;
+        line-height: 100%;
+        color: #333333;
+    }
+    &__wrap
+    {
+        padding: 10px 0;
+    }
+    &__document
+    {
+        padding: 1.5rem 3rem;
+        display: grid;
+        grid-template-columns: 2.1fr 0.20fr;
+        font-size: 2.4rem;
+        font-weight: 400;
+        line-height: 2.9rem;
+        position: relative;
+        color: #333333;
+        & > *
+        {
+            position: relative;
+            z-index: 20;
+        }
+        &:nth-child(odd)::after
+        {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #FFFFFF;
+            opacity: 0.2;
+            z-index: 10;
+        }
+        &-content
+        {
+            display: grid;
+            grid-template-columns: 1.3fr 0.8fr;
+        }
+        &-download
+        {
+            display: flex;
+            column-gap: 10px;
+            text-decoration: none;
+            img
+            {
+                width: 16px;
+                height: 22px;
+                object-fit: contain;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .documents-list__top
+    {
+        flex-direction: column;
+    }
+    .documents-list__top-img
+    {
+        margin-top: 30px;
+        max-height: 70px;
+        padding: 10px 77px;
+    }
+    .documents-list
+    {   
+        &__header
+        {
+            display: none;
+        }
+        &__title
+        {
+            padding: 10px 0;
+            border-top: 1px solid #492E16;
+            font-size: 16px;
+        }
+
+        &__document
+        {
+            padding: 4px 0;
+            font-size: 12px;
+            &-content
+            {
+                grid-template-columns: 1fr;
+                align-items: center;
+            }
+            &-download
+            {
+                align-items: center;
+                img
+                {
+                    width: 10px;
+                    height: 14px;
+                }
+            }
+        }
+
+    }
+}

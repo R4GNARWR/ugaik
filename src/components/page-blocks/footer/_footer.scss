@@ -3,11 +3,11 @@
     width: 100%;
     height: 50px;
     padding: 0 40px;
-
+    margin-top: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-
+    flex-shrink: 0;
     background-color: var(--primary);
 
     font-weight: 400;
@@ -23,6 +23,7 @@
         text-align: right;
     }
 }
+
 @media (max-width: 576px) {
     .footer
     {

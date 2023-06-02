@@ -44,6 +44,7 @@
   "dependencies": {
     "bootstrap": "^5.2.3",
     "imask": "^6.6.1",
+    "ion-rangeslider": "^2.3.1",
     "jquery": "^3.7.0",
     "sass": "^1.56.0",
     "simple-parallax-js": "^5.6.2",
