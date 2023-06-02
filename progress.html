@@ -28,7 +28,7 @@
 
 <body>
 
-	<main class="main ">
+	<main class="main">
 		<header class="header">
     <div class="logo">
         <img src="img/logo.svg" alt="">
@@ -79,50 +79,61 @@
 </aside>
 		<div class="main-wrap">
 			<section class="main-content pattern-main">
-				<div class="swiper main-slider">
-  <div class="swiper-wrapper">
-    <div class="swiper-slide main-slider__slide">
-      <div class="main-slider__slide-content">
-        <div class="main-slider__slide-title">
-          На природе вблизи города
+				<section class="pt-md-100 pb-100">
+    <div class="container">
+        <h1 class="h2 mb-30 text-primary">Ход строительства</h1>
+        <h3 class="mb-70 fw-md-300 fw-400">Онлайн трансляция с Жилого комлекса «Миловские просторы»:</h3>
+        <div class="tab-container" id="progressTabs">
+            <div class="tab active" onclick="toggleTabs(this, document.querySelector('#progressTabs'))">
+                Камера №1
+            </div>
+            <div class="tab" onclick="toggleTabs(this, document.querySelector('#progressTabs'))">
+                Камера №2
+            </div>
         </div>
-        <div class="main-slider__slide-text">
-          Жилой комплекс «Миловские просторы» расположен в 15 минутах от центра города на автомобиле
+        <div class="progress-videos__container">
+            <div class="progress-videos-item">
+                <video src="" class="">
+                    <source>
+                </video> 
+            </div>
+
         </div>
-        <a href="" class="btn btn-primary btn-block">Подробнее о предложении</a>
-      </div>
-      <div class="main-slider__slide-photo">
-        <img src="img/slide.webp" alt="">
-      </div>
+
     </div>
 
-    <div class="swiper-slide main-slider__slide">
-      <div class="main-slider__slide-content">
-        <div class="main-slider__slide-title">
-          Комфортная квартира в комфортном месте
+</section>
+
+				
+<section class="pb-100">
+    <div class="container ">
+        <h3 class="mb-70 fw-md-300 fw-400">Выберите дом в квартале Жилого комлекса «Миловские просторы»:</h3>
+        <div class="row custom-row">
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="progress-card">
+                    <div class="progress-card__img">
+                        <img src="img/progress.webp" alt="">
+                    </div>
+
+                    <div class="progress-card__top">
+                        <div class="progress-card__top-title">
+                            Дом №1
+                        </div>
+                        <div class="progress-card__top-jk">
+                            <img src="img/solnechnyj.svg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="progress-card__bar">
+                        <div class="progress-card__bar-percent" style="width: 75%;"></div>
+                        <div class="progress-card__bar-text">готовность дома - 75%</div>
+                    </div>
+                    <a class="link" href="/progressDetail.html"></a>
+                </div>
+            </div>
         </div>
-        <div class="main-slider__slide-text">
-          Комфортный и безопасный двор для всей семьи, закрытый от посторонних
-        </div>
-        <a href="" class="btn btn-primary btn-block">Подробнее о предложении</a>
-      </div>
-      <div class="main-slider__slide-photo">
-        <img src="img/slide2.webp" alt="">
-      </div>
     </div>
-    
-  </div>
-  
-  <div class="main-slider__pagination slider__pagination"></div>
-  
-  <div class="slider__nav slider__nav-prev main-slider__nav-prev">
-    <img src="img/swiper-left.svg" alt="">
-  </div>
-  <div class="slider__nav slider__nav-next main-slider__nav-next">
-    <img src="img/swiper-right.svg" alt="">
-  </div>
-  
-</div>
+</section>
 				<footer class="footer">
     <div class="footer-company">
         © АО СЗ "УГАИК", 2023
@@ -142,4 +153,3 @@
 </body>
 
 </html>
-

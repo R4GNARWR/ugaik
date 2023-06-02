@@ -28,7 +28,7 @@
 
 <body>
 
-	<main class="main ">
+	<main class="main">
 		<header class="header">
     <div class="logo">
         <img src="img/logo.svg" alt="">
@@ -79,50 +79,57 @@
 </aside>
 		<div class="main-wrap">
 			<section class="main-content pattern-main">
-				<div class="swiper main-slider">
-  <div class="swiper-wrapper">
-    <div class="swiper-slide main-slider__slide">
-      <div class="main-slider__slide-content">
-        <div class="main-slider__slide-title">
-          На природе вблизи города
+				<section class="pt-md-100 py-50">   
+    <div class="container">
+        <h1 class="h2 mb-70">Контактная информация</h1>
+        <div class="row">
+            <div class="col-md-6 col-12">
+                <div class="contacts-info">
+                    <div class="contacts-info__img">
+                        <img src="img/contacts.webp" alt="">
+                    </div>
+                    <div class="contacts-info__title">
+                        Отдел продаж в Уфе
+                    </div>
+                    <div class="contacts-info__item">
+                        <img class="icon" src="img/phone.svg" alt="">
+                        8 (347)285-11-11
+                    </div>
+                    <div class="contacts-info__item">
+                        <img class="icon" src="img/location.svg" alt="">
+                        Пр.Октября, дом 132/3, каб.505
+                    </div>
+                    <div class="contacts-info__title">
+                        Бесплатно по России
+                    </div>
+                    <div class="contacts-info__item">
+                        <img class="icon" src="img/phone.svg" alt="">
+                        8 (347)285-11-11
+                    </div>
+                    
+                </div>
+            </div>
         </div>
-        <div class="main-slider__slide-text">
-          Жилой комплекс «Миловские просторы» расположен в 15 минутах от центра города на автомобиле
-        </div>
-        <a href="" class="btn btn-primary btn-block">Подробнее о предложении</a>
-      </div>
-      <div class="main-slider__slide-photo">
-        <img src="img/slide.webp" alt="">
-      </div>
     </div>
 
-    <div class="swiper-slide main-slider__slide">
-      <div class="main-slider__slide-content">
-        <div class="main-slider__slide-title">
-          Комфортная квартира в комфортном месте
+</section>
+				<section class="py-md-50 pt-50">
+    <div class="container-md form-container">
+        <div class="contacts-form__wrap">
+            <form class="contacts-form">
+                <div class="form-title">Отправить сообщение</div>
+                <input class="form-control" name="" id="" type="text" placeholder="Как к вам можно обращаться?">
+                <input class="form-control" name="" id="" type="tel" placeholder="Ваш номер телефона">
+                <textarea class="form-control" value="" name="" id="" rows="5">Ваше сообщение</textarea>
+                <button type="submit" class="btn btn-outline-primary btn-block">Отправить сообщение</button>
+            </form>
         </div>
-        <div class="main-slider__slide-text">
-          Комфортный и безопасный двор для всей семьи, закрытый от посторонних
-        </div>
-        <a href="" class="btn btn-primary btn-block">Подробнее о предложении</a>
-      </div>
-      <div class="main-slider__slide-photo">
-        <img src="img/slide2.webp" alt="">
-      </div>
+
     </div>
-    
-  </div>
-  
-  <div class="main-slider__pagination slider__pagination"></div>
-  
-  <div class="slider__nav slider__nav-prev main-slider__nav-prev">
-    <img src="img/swiper-left.svg" alt="">
-  </div>
-  <div class="slider__nav slider__nav-next main-slider__nav-next">
-    <img src="img/swiper-right.svg" alt="">
-  </div>
-  
-</div>
+</section>
+				<section>
+    <div class="map" id="contactsMap" data-lat="54.737316" data-lng="55.959147" data-zoom="12" data-dots='[{"lat": "54.738910","lng": "55.971484"},{"lat": "54.730120","lng": "55.950695"}]'></div>
+</section>
 				<footer class="footer">
     <div class="footer-company">
         © АО СЗ "УГАИК", 2023
@@ -142,4 +149,3 @@
 </body>
 
 </html>
-
