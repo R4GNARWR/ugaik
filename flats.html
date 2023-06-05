@@ -30,9 +30,9 @@
 
 	<main class="main">
 		<header class="header">
-    <div class="logo">
+    <a href="#" class="logo">
         <img src="img/logo.svg" alt="">
-    </div>
+    </a>
     <div class="menu-btn">
         меню
         <div class="menu-btn__lines">
@@ -51,9 +51,9 @@
 
 		<aside class="side-menu">
     <section class="side-menu__top">
-        <div class="side-menu__top-logo">
+        <a href="/" class="side-menu__top-logo">
             <img src="img/logo.svg" alt="">
-        </div>
+        </a>
         <div class="side-menu__top-call">
             <div class="text">Отдел продаж:</div>
             <a href="tel:" class="phone fw-600">8 800 222-11-11</a>
@@ -72,22 +72,23 @@
         <a href="contacts.html">Контакты</a>
     </nav>
     <section class="side-menu__links">
-        <div class="side-menu__links-logo">
-            <img src="img/logoBottom.svg" alt="">
-        </div>
+        <a href="#" class="side-menu__links-logo img-hover">
+            <img class="static" src="img/logoBottom.svg" alt="">
+            <img class="hover" src="img/logoBottomHover.svg" alt="">
+        </a>
     </section>
 </aside>
-		<div class="main-wrap">
-			<section class="main-content pattern-main">
+		<div class="main-wrap pattern-main">
+			<section class="main-content ">
 				<section class="py-50">
     <div class="container">
         <div class="row">
             <div class="col-lg-5 col-md-6 col-12">
-                <a href="" class="btn btn-primary btn-block mb-100">Назад к визуальному выбору</a>
+                <a href="" class="btn btn-primary btn-block mb-md-100 mb-20">Назад к выбору дома</a>
             </div>
         </div>
-        <div class="flat-filter mt-50">
-            <h3 class="text-white mb-30 fw-600">Подобрать квартиру по параметрам</h3>
+        <div class="flat-filter mt-md-50">
+            <h3 class="flat-filter__title mb-30 fw-600">Подобрать квартиру по параметрам</h3>
             <div class="filter-row">
                 <div class="flat-filter__item">
                     <select class="select" name="" id="">
@@ -119,10 +120,79 @@
                     value="" />/>
                 </div>
             </div>
+            <a href="" class="btn btn-md-outline-primary btn-primary btn-mini btn-block">Подобрать</a>
         </div>
     </div>
 </section>
-                
+                <section class="mt-100">
+    <div class="container">
+        <h4 class="fw-600 text-primary mb-30">Мы подобрали следующие варианты коммерческой недвижимости</h4>
+        <div class="filter-top">
+            <div class="filter-top__left">
+                <div class="filter-top__text">
+                    Сортировать по:
+                </div>
+                <div class="dropdown filter-top__left-type">
+                    <select class="typeSelect" name="" id="">
+                        <option value="">По цене</option>
+                        <option value="">По метражу</option>
+                    </select>
+                </div>
+            </div>
+            <div class="filter-top__right">
+                <div class="filter-top__text">
+                    Вид:
+                </div>
+                <div class="filter-top__right-type">
+                    <svg class="active" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="5" y="5" width="13" height="13" rx="2" fill=""/>
+                        <rect x="5" y="22" width="13" height="13" rx="2" fill=""/>
+                        <rect x="22" y="5" width="13" height="13" rx="2" fill=""/>
+                        <rect x="22" y="22" width="13" height="13" rx="2" fill=""/>
+                    </svg>
+
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="5" y="5" width="30" height="4" rx="2" fill=""/>
+                        <rect x="5" y="14" width="30" height="4" rx="2" fill=""/>
+                        <rect x="5" y="22" width="30" height="4" rx="2" fill=""/>
+                        <rect x="5" y="31" width="30" height="4" rx="2" fill=""/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-30 pb-100">
+            <div class="col-lg-4 col-6">
+                <div class="flat-card">
+                    <div class="flat-card__top d-md-none d-flex">
+                        <div class="flat-card__top-square">48.8 м2</div>
+                        <div class="flat-card__top-rooms">2-комн.</div>
+                    </div>
+                    <div class="flat-card__img">
+                        <img src="img/flat.png" alt="">
+                    </div>
+                    <div class="flat-card__info">
+                        <div class="flat-card__info-row">
+                            <div class="flat-card__info-title">Квартал</div>
+                            <div class="flat-card__info-underline"></div>
+                            <div class="flat-card__info-text">«Лесное»</div>
+                        </div>
+                        <div class="flat-card__info-row">
+                            <div class="flat-card__info-title">Подъезд</div>
+                            <div class="flat-card__info-underline"></div>
+                            <div class="flat-card__info-text">Ж</div>
+                        </div>
+                    </div>
+                    <div class="flat-card__bottom d-md-none d-block">
+                        <div class="flat-card__bottom-price">5.9 млн.₽</div>
+                    </div>
+                    <a class="btn btn-primary btn-mini d-md-block d-none" href="">Заказать звонок</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
 				<footer class="footer">
     <div class="footer-company">
         © АО СЗ "УГАИК", 2023
