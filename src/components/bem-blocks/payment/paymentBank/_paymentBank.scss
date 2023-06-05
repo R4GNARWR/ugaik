@@ -1,3 +1,4 @@
+
 .payment-banks
 {
     display: flex;
@@ -5,6 +6,10 @@
     column-gap: 8rem;
     justify-content: space-between;
     flex-wrap: wrap;
+    &_wrap
+    {
+        padding: 10rem 0;
+    }
     &__item
     {
         max-width: 19.2rem;
@@ -23,6 +28,10 @@
     {
         column-gap: 20px;
         row-gap: 20px;
+        &_wrap
+        {
+            padding: 40px 0;
+        }
         &__item
         {
             max-width: 80px;

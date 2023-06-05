@@ -1,6 +1,5 @@
 .contacts-info__img
 {
-    margin-bottom: 1rem;
     position: relative;
     width: 100%;
     &::before
@@ -40,4 +39,20 @@
     font-size: 2.4rem;
     line-height: 2.9rem;
     color: var(--primary);
+}
+@media (max-width: 768px) {
+    .contacts-info__title
+    {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .contacts-info__title
+    {
+        font-size: 18px;
+    }
+    .contacts-info__item
+    {
+        font-size: 16px;
+    }
+
 }

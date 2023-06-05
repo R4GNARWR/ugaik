@@ -30,9 +30,9 @@
 
 	<main class="main">
 		<header class="header">
-    <div class="logo">
+    <a href="#" class="logo">
         <img src="img/logo.svg" alt="">
-    </div>
+    </a>
     <div class="menu-btn">
         меню
         <div class="menu-btn__lines">
@@ -51,9 +51,9 @@
 
 		<aside class="side-menu">
     <section class="side-menu__top">
-        <div class="side-menu__top-logo">
+        <a href="/" class="side-menu__top-logo">
             <img src="img/logo.svg" alt="">
-        </div>
+        </a>
         <div class="side-menu__top-call">
             <div class="text">Отдел продаж:</div>
             <a href="tel:" class="phone fw-600">8 800 222-11-11</a>
@@ -72,14 +72,15 @@
         <a href="contacts.html">Контакты</a>
     </nav>
     <section class="side-menu__links">
-        <div class="side-menu__links-logo">
-            <img src="img/logoBottom.svg" alt="">
-        </div>
+        <a href="#" class="side-menu__links-logo img-hover">
+            <img class="static" src="img/logoBottom.svg" alt="">
+            <img class="hover" src="img/logoBottomHover.svg" alt="">
+        </a>
     </section>
 </aside>
-		<div class="main-wrap">
-			<section class="main-content pattern-main">
-				<section class="pt-md-100 pb-100">
+		<div class="main-wrap pattern-main">
+			<section class="main-content ">
+				<section class="pt-100 pb-md-100 pb-50">
     <div class="container">
         <h1 class="h2 mb-70">Способы покупки</h1>
         <h3 class="fw-md-300 fw-400 lh-150">
@@ -89,7 +90,7 @@
     </div>
 </section>
 
-<section class="mt-100 pb-100">
+<section class="pt-md-0 pb-md-100 pb-50-strict">
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-12">
@@ -107,7 +108,7 @@
         </div>
     </div>
 </section>
-                <section class="py-50 bg-primary">
+                <section class="payment-banks_wrap bg-primary">
     <div class="container">
         <h2 class="mb-70 text-white">Банки партнеры</h2>
         <div class="payment-banks">
@@ -142,16 +143,16 @@
         </div>
     </div>
 </section>
-                <section class="pt-100 pb-50">
+                <section class="pt-100 pb-50-strict">
     <div class="container">
         <div class="row">
-            <div class="col-md-6 col-12">
+            <div class="col-md-6 col-12 order-md-0 order-1">
                 <div class="about-content payment-content">
                     <h4 class="h2 about-label">Программа жилищных строительных сбережений</h4>
                     <p class="about-text ">Программа жилищных строительных сбережений (Сбербанк, Банк Уралсиб).</p>
                 </div>
             </div>
-            <div class="col-md-6 col-12">
+            <div class="col-md-6 col-12 order-md-1 order-0">
                 <div class="about-img border-left">
                     <img src="" alt="">
                 </div>
@@ -160,7 +161,7 @@
     </div>
 </section>
 
-<section class="pb-50">
+<section class="pb-50-strict">
     <div class="container">
         <div class="row">
 
@@ -179,17 +180,17 @@
     </div>
 </section>
 
-<section class="pb-50">
+<section class="pb-50-strict">
     <div class="container">
         <div class="row">
-            <div class="col-md-6 col-12">
+            <div class="col-md-6 col-12 order-md-0 order-1">
                 <div class="about-content payment-content">
                     <h4 class="h2 about-label">Государственные жилищные сертификаты</h4>
                     <p class="about-text ">Государственные жилищные сертификаты, субсидии на получение жилья.</p>
                 </div>
             </div>
             
-            <div class="col-md-6 col-12">
+            <div class="col-md-6 col-12 order-md-1 order-0">
                 <div class="about-img border-left">
                     <img src="" alt="">
                 </div>
@@ -199,7 +200,7 @@
     </div>
 </section>
 
-<section class="pb-50">
+<section class="pb-50-strict">
     <div class="container">
         <div class="row">
 

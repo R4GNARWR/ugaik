@@ -5,3 +5,12 @@
         margin-top: 2rem;
     }
 }
+@media (max-width: 768px) {
+    .payment-content
+    {
+        .btn
+        {
+            margin-top: 20px;
+        }
+    }
+}

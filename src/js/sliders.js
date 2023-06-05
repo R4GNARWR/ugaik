@@ -2,7 +2,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   const swiperMain = new Swiper('.main-slider', {
     
-    effect: 'fade',
+
     speed: 500,
     
     slidesPerView: 1,
@@ -21,7 +21,6 @@ document.addEventListener('DOMContentLoaded', () => {
   
   const swiperAboutGallery = new Swiper('.about-gallery__slider', {
     
-    effect: 'fade',
     speed: 500,
     
     slidesPerView: 1,

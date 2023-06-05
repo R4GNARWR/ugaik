@@ -8,6 +8,15 @@
         display: block;
         position: relative;
     }
+    &__title
+    {
+        color: #FFFFFF;
+    }
+    .btn
+    {
+        margin-top: 3rem;
+    }
+
 }
 .filter-row
 {
@@ -80,4 +89,52 @@
 .irs--flat .irs-max, .irs--flat .irs-min
 {
     display: none;
+}
+@media (max-width: 991px) {
+    .filter-row
+    {
+        grid-template-columns: 1fr;
+    }
+
+}
+@media (max-width: 768px) {
+    .flat-filter
+    {
+        background-color: transparent;
+        padding: 0;
+        .btn
+        {
+            margin-top: 30px;
+        }
+    }
+    .irs--flat .irs-from,
+    .irs--flat .irs-to,
+    .irs--flat .irs-single {
+        color: var(--primary);
+        font-size: 12px;
+        font-weight: 700;
+    }
+    .irs--flat .irs-min,
+    .irs--flat .irs-max {
+        color: var(--primary);
+        font-size: 12px;
+        font-weight: 700;
+    }
+    .irs--flat .irs-bar,
+    .irs--flat .irs-handle.state_hover>i:first-child, .irs--flat .irs-handle:hover>i:first-child,
+    .irs--flat .irs-handle>i:first-child
+    {
+        background-color: var(--primary);
+    }
+    
+    .irs--flat .irs-handle
+    {
+        height: 23px;
+        width: 15px;
+        height: 15px;
+    }
+    .flat-filter__title
+    {
+        color: var(--primary);
+    }
 }

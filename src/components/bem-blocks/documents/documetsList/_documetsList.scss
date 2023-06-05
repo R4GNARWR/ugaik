@@ -10,9 +10,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #B19F86;
+    background-color: #B19F86;
+    transition: .3s;
     border-radius: 40px;
-    img
+    &:hover
+    {
+        background-color: var(--primary);
+    }
+    svg
     {
         width: 100%;
         height: 100%;

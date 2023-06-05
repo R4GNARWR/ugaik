@@ -48,6 +48,7 @@ h1,
 	font-weight: 600;
 	font-size: 6.4rem;
 	line-height: 100%;
+	color: var(--primary);
 }
 h2,
 .h2
@@ -121,6 +122,10 @@ p,
 {
 	color: var(--primary) !important;
 }
+.mb-20
+{
+	margin-bottom: 20px;
+}
 .mb-30
 {
 	margin-bottom: 3rem;
@@ -175,7 +180,10 @@ p,
 {
 	padding-bottom: 5rem;
 }
-
+.pb-50-strict
+{
+	padding-bottom: 5rem;
+}
 .row
 {
 	margin-right: -1.5rem;
@@ -189,6 +197,7 @@ p,
 .pattern-main
 {
 	background: var(--secondary) url('/img/pattern-main.png') top center/170rem;
+	background-repeat: repeat;
 }
 
 .bg-primary
@@ -253,6 +262,7 @@ p,
 	{
 		font-weight: 300;
 	}
+
 	.mb-md-30
 	{
 		margin-bottom: 3rem;
@@ -264,6 +274,10 @@ p,
 	.mb-md-70
 	{
 		margin-bottom: 7rem;
+	}
+	.mb-md-100
+	{
+		margin-bottom: 10rem;
 	}
 	.mt-md-30
 	{
@@ -301,6 +315,10 @@ p,
 	.py-md-100
 	{
 		padding: 10rem 0;
+	}
+	.pt-md-0
+	{
+		padding-top: 0;
 	}
 
 }
@@ -340,6 +358,23 @@ p,
 	{
 		font-size: 16px;
 		line-height: 130%;
+	}
+	.pb-50-strict
+	{
+		padding-bottom: 50px;
+	}
+	.py-100
+	{
+		padding: 50px 0;
+	}
+
+	.pt-100
+	{
+		padding-top: 50px;
+	}
+	.pb-100
+	{
+		padding-bottom: 50px;
 	}
 }
 

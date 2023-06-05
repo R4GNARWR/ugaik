@@ -10,9 +10,10 @@
 {
     padding: 7.4rem 4.7rem;
     position: absolute;
-    z-index: 100;
+    z-index: 200;
     left: 17.2rem;
-    top: 100px;
+    top: 50%;
+    transform: translateY(-50%);
     width: 49.5rem;
     background: var(--primary);
     border-radius: 40px;
@@ -65,10 +66,25 @@
         }
     }
 }
+@media (max-width:1200px) {
+    .about-contacts__card
+    {
+        width: 35%;
+    }
+}
+@media (max-width:991px) {
+    .about-contacts__card
+    {
+        width: 40%;
+    }
+}
 @media (max-width:768px) {
     .about-contacts__card
     {
-        position: static;
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: translateY(0);
         width: 100%;
         padding: 40px 20px;
         border-radius: 20px;
@@ -95,6 +111,7 @@
     #aboutContactsMap
     {
         height: 440px;
+        margin-top: -20px;
     }
 }
 @media (max-width:576px) {
