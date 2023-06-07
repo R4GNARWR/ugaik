@@ -617,3 +617,76 @@ a.link
         }
     }
 }
+
+.floor-select
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 6px;
+    &__value
+    {
+
+        display: flex;
+        align-items: flex-end;
+        column-gap: 11px;
+        font-weight: 400;
+        font-size: 2.4rem;
+        line-height: 1.2em;
+        color: var(--primary);
+        span
+        {
+            font-size: 7.2rem;
+            line-height: 0.9em;
+        }
+    }
+    &__prev,
+    &__next
+    {
+        width: 60px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--primary);
+        border-radius: 50%;
+    }
+
+    &__prev
+    {
+        &::after
+        {
+            content: '';
+            display: inline-block;
+            border: solid #FFFFFF;
+            border-width: 0 3px 3px 0;
+            border-radius: 2px;
+            padding: 7px;
+            transform: rotate(-135deg) translateX(-2px) translateY(-2px);
+            transition: .3s;
+        }
+    }
+    &__next
+    {
+        &::after
+        {
+            content: '';
+            display: inline-block;
+            border: solid #FFFFFF;
+            border-width: 0 3px 3px 0;
+            border-radius: 2px;
+            padding: 7px;
+            transform: rotate(45deg) translateX(-2px) translateY(-2px);
+            transition: .3s;
+        }
+    }
+    &__prev:hover,
+    &__next:hover
+    {
+        &::after
+        {
+            border: solid var(--secondary);
+            border-width: 0 3px 3px 0;
+        }
+    }
+}

@@ -8,10 +8,13 @@
 
 <body>
 
+<!-- main start -->
 	<main class="main">
 		@@include('components/page-blocks/header/_header.html')
 		@@include('components/page-blocks/sidebar/_sidebar.html')
+		<!-- pattern wrap start -->
 		<div class="main-wrap pattern-main">
+			<!-- content wrap start -->
 			<section class="main-content ">
 				@@include('components/bem-blocks/payment/paymentTop/_paymentTop.html')
                 @@include('components/bem-blocks/payment/paymentBank/_paymentBank.html')
@@ -19,8 +22,11 @@
                 @@include('components/bem-blocks/payment/paymentMap/_paymentMap.html')
 				@@include('components/page-blocks/footer/_footer.html')
 			</section>
+			<!-- content wrap end -->
 		</div>
+		<!-- pattern wrap end -->
 	</main>
+	<!-- main end -->
 	@@include('components/page-blocks/_scripts.html')
 </body>
 

@@ -42,6 +42,7 @@
     "vinyl-ftp": "^0.6.1"
   },
   "dependencies": {
+    "@fancyapps/ui": "^5.0.19",
     "bootstrap": "^5.2.3",
     "imask": "^6.6.1",
     "ion-rangeslider": "^2.3.1",
