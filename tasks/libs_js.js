@@ -1,9 +1,10 @@
 const plugins = [
 	'node_modules/jquery/dist/jquery.min.js',
+	'node_modules/bootstrap/dist/js/bootstrap.bundle.min.js',
 	'node_modules/swiper/swiper-bundle.min.js',
 	'node_modules/imask/dist/imask.min.js',
 	'node_modules/@fancyapps/ui/dist/fancybox/fancybox.umd.js',
-	'node_modules/simple-parallax-js/dist/simpleParallax.min.js',
+	'node_modules/rallax.js/dist/rallax.js',
 	'node_modules/ion-rangeslider/js/ion.rangeSlider.min.js',
 
 ];

@@ -47,6 +47,7 @@
     "imask": "^6.6.1",
     "ion-rangeslider": "^2.3.1",
     "jquery": "^3.7.0",
+    "rallax.js": "^2.0.4",
     "sass": "^1.56.0",
     "simple-parallax-js": "^5.6.2",
     "swiper": "^9.3.2"

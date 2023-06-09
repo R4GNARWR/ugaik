@@ -19,7 +19,7 @@
         position: relative;
         overflow-y: scroll;
         flex-grow: 1;
-        
+        -webkit-overflow-scrolling: none;
     }
     &-content
     {
@@ -33,6 +33,20 @@
         max-width: 100%;
         
     }
+}
+
+@media (min-width: 768px) {
+    .border-left
+    {
+        overflow: hidden;
+        border-radius: 40px 0px 0px 40px;
+    }
+    .border-right
+    {
+        overflow: hidden;
+        border-radius: 0px 40px 40px 0px;
+    }
+
 }
 
 .custom-row
@@ -688,5 +702,48 @@ a.link
             border: solid var(--secondary);
             border-width: 0 3px 3px 0;
         }
+    }
+}
+.modal-close
+{
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+    width: 6rem;
+    height: 6rem;
+    background-color: var(--primary);
+    border-radius: 50%;
+    appearance: none;
+    outline: none;
+    border: 0;
+
+    &::after,
+    &::before
+    {
+        content: '';
+        display: block;
+        height: .2rem;
+        width: 2.2rem;
+        background-color: #FFFFFF;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transition: .3s;
+    }
+    &:hover
+    {
+        &::after,
+        &::before
+        {
+            background-color: var(--secondary);
+        }
+    }
+    &::after
+    {
+        transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    }
+    &::before
+    {
+        transform: translateX(-50%) translateY(-50%) rotate(-45deg);
     }
 }
