@@ -67,6 +67,10 @@ function changeContentSlide(slideToChange , slidesContainer)
     }
     
 }
+Fancybox.bind("[data-fancybox]", {
+    // Your custom options
+});
+
 if(closeButtons)
 {
     closeButtons.forEach((btn) => {
