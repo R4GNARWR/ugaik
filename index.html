@@ -27,7 +27,33 @@
 
 
 <body>
+	<div class="modal-callorder" id="callorder" style="display: none;">
+    <div class="modal-close"></div>
+    <div class="modal-callorder__content">
+        <div class="modal-callorder__title">
+            Заказ звонка
+        </div>
+        <form action="">
+            <input type="text" placeholder="Укажите номер помещения" class="form-control">
+            <input type="tel" placeholder="+7 (_ _ _) - _ _ _ - _ _ - _ _" class="form-control">
+            <button type="submit" class="btn btn-block btn-outline-primary">Найти</button>
+        </form>
 
+    </div>
+</div>
+	<div class="modal-callorder" id="findFlat" style="display: none;">
+    <div class="modal-close"></div>
+    <div class="modal-callorder__content">
+        <div class="modal-callorder__title">
+            Поиск по номеру
+        </div>
+        <form action="">
+            <input type="text" placeholder="Укажите номер помещения" class="form-control">
+            <button type="submit" class="btn btn-block btn-outline-primary">Найти</button>
+        </form>
+
+    </div>
+</div>
 <!-- main start -->
 	<main class="main">
 		<!-- Header Start -->
@@ -99,7 +125,7 @@
         <div class="main-slider__slide-text">
           Жилой комплекс «Миловские просторы» расположен в 15 минутах от центра города на автомобиле
         </div>
-        <a href="" class="btn btn-primary btn-block">Подробнее о предложении</a>
+        <a href="#" class="btn btn-primary btn-block" data-fancybox data-src="#callorder">Подробнее о предложении</a>
       </div>
       <div class="main-slider__slide-photo">
         <img src="img/slide.webp" alt="">
