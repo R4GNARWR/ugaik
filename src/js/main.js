@@ -1,6 +1,7 @@
 const mainContentWrap = document.querySelector('.main-content');
 const menuBtn = document.querySelector('.menu-btn');
 const sideMenu = document.querySelector('.side-menu');
+const callorderButtons = document.querySelectorAll('[data-modal]')
 
 function toggleClass(element, className)
 {
@@ -60,7 +61,6 @@ function changeContentSlide(slideToChange , slidesContainer)
     }
     
 }
-
 if(menuBtn)
 {
     menuBtn.addEventListener('click', () =>

@@ -27,7 +27,33 @@
 
 
 <body>
+	<div class="modal-callorder" id="callorder" style="display: none;">
+    <div class="modal-close"></div>
+    <div class="modal-callorder__content">
+        <div class="modal-callorder__title">
+            Заказ звонка
+        </div>
+        <form action="">
+            <input type="text" placeholder="Укажите номер помещения" class="form-control">
+            <input type="tel" placeholder="+7 (_ _ _) - _ _ _ - _ _ - _ _" class="form-control">
+            <button type="submit" class="btn btn-block btn-outline-primary">Найти</button>
+        </form>
 
+    </div>
+</div>
+	<div class="modal-callorder" id="findFlat" style="display: none;">
+    <div class="modal-close"></div>
+    <div class="modal-callorder__content">
+        <div class="modal-callorder__title">
+            Поиск по номеру
+        </div>
+        <form action="">
+            <input type="text" placeholder="Укажите номер помещения" class="form-control">
+            <button type="submit" class="btn btn-block btn-outline-primary">Найти</button>
+        </form>
+
+    </div>
+</div>
 <!-- main start -->
 	<main class="main">
 		<!-- Header Start -->
@@ -170,7 +196,7 @@
                     <a href="#" class="floor-select__next"></a>
                 </div>
                 <div class="btn-wrap">
-                    <a href="" class="btn btn-primary btn-block">Поиск по номеру</a>
+                    <a href="" class="btn btn-primary btn-block" data-fancybox data-src="#findFlat">Поиск по номеру</a>
                     <a href="" class="btn btn-outline-primary btn-block">Заказать звонок</a>
                 </div>
                 
