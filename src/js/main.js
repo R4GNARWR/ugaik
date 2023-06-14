@@ -2,6 +2,12 @@ const mainContentWrap = document.querySelector('.main-content');
 const menuBtn = document.querySelector('.menu-btn');
 const sideMenu = document.querySelector('.side-menu');
 const callorderButtons = document.querySelectorAll('[data-modal]')
+const closeButtons = document.querySelectorAll('.modal-close');
+
+Fancybox.defaults.closeButton = false;
+
+
+
 
 function toggleClass(element, className)
 {
@@ -61,6 +67,16 @@ function changeContentSlide(slideToChange , slidesContainer)
     }
     
 }
+if(closeButtons)
+{
+    closeButtons.forEach((btn) => {
+        btn.addEventListener('click', () => {
+            Fancybox.getInstance().close();
+        })
+    })
+}
+
+
 if(menuBtn)
 {
     menuBtn.addEventListener('click', () =>
