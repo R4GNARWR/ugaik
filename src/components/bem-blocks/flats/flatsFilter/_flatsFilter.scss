@@ -44,7 +44,9 @@
 }
 .irs--flat .irs-line 
 {
-    background-color: transparent;
+    height: 3px;
+    top: 40px;
+    background-color: rgba($color: #FFFFFF, $alpha: .3);
 }
 .irs--flat .irs-handle
 {

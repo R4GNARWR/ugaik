@@ -71,6 +71,7 @@
 @media (max-width:1200px) {
     .main-slider
     {
+        height: calc(100vh - 60px);
         &__slide
         {
             padding: 0 120px;
@@ -98,6 +99,7 @@
 @media (max-width:991px) {
     .main-slider
     {
+
         &__slide
         {
             padding: 0 20px;
@@ -120,4 +122,5 @@
             margin-bottom: 20px;
         }
     }
+    
 }

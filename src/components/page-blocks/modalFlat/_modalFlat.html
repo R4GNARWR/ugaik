@@ -77,31 +77,40 @@
         <section class="modal-facade__content modal-flat__content">
             <button class="modal-close"></button>
             <div class="modal-facade__content-left">
-                <a href="" class="btn btn-primary btn-block">Назад</a>
+                <a href="" class="btn btn-primary d-md-block d-inline-block">Назад</a>
             </div>
             <div class="modal-facade__content-img">
-                <div class="modal-facade__content-img__top"> 
+                <div class="modal-facade__content-img__top d-md-flex d-none"> 
                     <div class="cvartal">Квартал XX,</div>
                     <div class="info">Этаж 2, Подъезд 1, Помещение 00</div>
                 </div>
+                <div class="modal-facade__content-img__top d-md-none d-flex"> 
+                    <div class="title">Помещение №00</div>
+                    <div class="price">Цена: 5.900.000₽ </div>
+                </div>
                 <div class="modal-facade__content-img__floor">
                     <img src="img/flat.png" alt="">
-                </svg>
+                </div>
             </div>
-        </div>
-        <div class="modal-flat__view">
+        <div class="modal-flat__view d-md-flex d-none">
             <button class="modal-flat__view-item chosen">2D</button>
             <button class="modal-flat__view-item">3D</button>
         </div>
         <div class="modal-facade__content-right">
-            <div style="height: 20rem"></div>
+            <div class="d-md-block d-none" style="height: 20rem"></div>
             <div class="modal-flat__info">
-                <div class="modal-flat__info-number">Помещение <span>№00</span></div>
+                <div class="modal-flat__info-number d-md-block d-none">Помещение <span>№00</span></div>
                 <ul class="modal-flat__info-list">
+
                     <li>Цена: <span class="big">2.6 млн.₽</span></li>
-                    <li>Комнат: <span></span>2</li>
-                    <li>Площадь: <span></span>XX м<sup>2</sup></li>
+                    <li>Квартал: <span>Лесное</span></li>
+                    <li>Подъезд: <span>Ж</span></li>
+                    <li class="d-md-none d-inline-block">Помещение №<span>00</span></li>
+                    <li>Назначение помещения: <span>Офисное</span></li>
+                    <li>Комнат: <span>2</span></li>
+                    <li>Площадь: <span>XX м<sup>2</sup></span></li>
                     <li>Жилая площадь: <span>ХХ м<sup>2</sup></span></li>
+                    <li>Сдача: <span>2024</span></li>
                 </ul>
             </div>
             <div class="btn-wrap">

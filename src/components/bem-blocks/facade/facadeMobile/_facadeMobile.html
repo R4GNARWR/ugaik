@@ -1,0 +1,54 @@
+<section class="d-md-none d-block py-100">
+    <div class="container">
+        <h1>
+            Выберите дом с коммерческой недвижимостью:
+        </h1>
+        <hr class="divider">
+        <div class="tab-container_facadeMobile " id="progressTabs">
+            <div class="tab active"
+            onclick="
+            toggleTabs(this, document.querySelector('#progressTabs'));
+            changeContentSlide(document.querySelector('#mobileGenplan') ,document.querySelector('.facadeMobile_slides'))
+            ">
+                На генплане
+            </div>
+
+            <div class="tab"
+            onclick="
+                toggleTabs(this, document.querySelector('#progressTabs'));
+                changeContentSlide(document.querySelector('#mobileList'), document.querySelector('.facadeMobile_slides'))
+            ">
+                Список домов
+            </div>
+        </div>
+        <hr class="divider">
+        <div class="facadeMobile_slides">
+            <div class="content-slide" style="display: block;" id="mobileGenplan">
+                <p>Генплан:</p> 
+                <div class="facadeMobile__genplan">
+                    <img src="img/mobileGenplan.svg" alt="">
+                    <svg viewBox="0 0 280 369" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        
+                    </svg>
+                </div>
+            </div>
+            <div class="content-slide" style="display: none;" id="mobileList">
+                <p>Дома:</p>
+                <div class="facadeMobile__houseList">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="facadeMobile__houseList-item" style="background-image: url('img/house.png');">
+                                <div class="facadeMobile__houseList-item__title">дом №1</div>
+                                <div class="facadeMobile__houseList-item__price">от 2.6 млн.₽</div>
+                                <a data-fancybox data-src="#flatModal" class="link"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+            
+    </div>
+</section>

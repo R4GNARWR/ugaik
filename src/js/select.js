@@ -5,7 +5,10 @@ $('.select').each(function() {
       selectedOption = selectOption.filter(':selected');
   
     _this.hide();
-    _this.wrap('<div class="select"></div>');
+    const selectWrap =  $('<div>', {
+      class: 'new-select__wrap'
+    });
+    _this.wrap(selectWrap);
     const selectTop = $('<div>', {
       class: 'new-select',
       text: _this.children('option:selected').text()
@@ -16,11 +19,12 @@ $('.select').each(function() {
     $('<div>', {
       class: 'new-select__list'
     }).insertAfter(selectHead);
-  
+
+    
     const selectList = selectHead.next('.new-select__list');
 
     for (let i = 0; i < selectOptionLength; i++) {
-
+      
       $('<div>', {
           class: 'new-select__item',
           html: $('<span>', {
@@ -53,6 +57,19 @@ $('.select').each(function() {
         selectList.removeClass('active');
       }
     });
+    function setSelectListPosition()
+    {
+        selectList.css({
+          paddingTop: _this.parent().height(),
+          marginTop: -_this.parent().height()
+        })
+    }
+    setSelectListPosition();
+    $( window ).on( "resize", () => {
+      setSelectListPosition()
+    })
+    
+
   });
 
 

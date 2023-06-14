@@ -1,3 +1,4 @@
+const mainContentWrap = document.querySelector('.main-content');
 const menuBtn = document.querySelector('.menu-btn');
 const sideMenu = document.querySelector('.side-menu');
 
@@ -13,33 +14,60 @@ function toggleClass(element, className)
 
 function toggleTabs(pressedTab, tabContainer)
 {
-    const tabs = tabContainer.querySelectorAll('.tab');
-    if (tabs && tabs.length > 0 )
+    if (!pressedTab || !tabContainer) {
+        return;
+    }
+    const tabsList = tabContainer.querySelectorAll('.tab');
+    if(!pressedTab.classList.contains('active')) pressedTab.classList.add('active');
+    
+    if (tabsList && tabsList.length > 0 )
     {
-        tabs.forEach(tab => {
-            if(tab === pressedTab && tab.classList.contains('active'))
-            {
+        tabsList.forEach(tab => {
+            if(tab === pressedTab && tab.classList.contains('active')) {
                 return;
             }
-            else if(tab !== pressedTab && tab.classList.contains('active'))
-            {
+            if(tab !== pressedTab && tab.classList.contains('active'))
+            {   
                 tab.classList.remove('active');
-                return;
-            }
-            else
-            {
-                tab.classList.add('active');
             }
         });
     }
-
 }
+
+function changeContentSlide(slideToChange , slidesContainer)
+{
+    if (!slideToChange || !slidesContainer) {
+        return;
+    }
+    const slidesList = slidesContainer.querySelectorAll('.content-slide');
+
+
+    if (slidesList && slidesList.length > 0 )
+    {
+        slidesList.forEach(slide => {
+            if(slide === slideToChange && slide.style.display === 'block' ) {
+                return;
+            }
+            if(slide !== slideToChange && slide.style.display === 'block' )
+            {   
+                slide.style.display = 'none';
+            }
+            else
+            {
+                slide.style.display = 'block';
+            }
+        });
+    }
+    
+}
+
 if(menuBtn)
 {
     menuBtn.addEventListener('click', () =>
     {
         toggleClass(menuBtn, 'active');
         toggleClass(sideMenu, 'active');
+        toggleClass(mainContentWrap, 'darken');
     })
 }
 

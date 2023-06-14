@@ -18,28 +18,86 @@
     {
         text-align: left;
     }
+    &-marketing
+    {
+        height: 30px;
+        width: 150px;
+        img
+        {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
     &-support
     {
-        text-align: right;
+        height: 30px;
+        width: 130px;
+        img
+        {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
     }
 }
 
 @media (max-width: 576px) {
     .footer
     {
-        flex-direction: column;
-        row-gap: 0;
-        justify-content: center;
+
+        padding: 10px 20px 20px;
+        margin: auto;
+        height: auto;
+        display: grid;
+        grid-template-areas:
+        "a a a a a a a a"
+        "a a a a a a a a"
+        "c c c c d d d d"
+        "c c c c d d d d";
         font-size: 12px;
         line-height: 14px;
         font-weight: 300;
+
+        & > *
+        {
+            align-self: stretch;
+        }
         &-company
         {
+            width: 100%;
+            position: relative;
+            margin-bottom: 15px;
+            grid-area: a;
+            justify-self: center;
             text-align: center;
+            &::after
+            {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: calc(100% + 5px);
+                height: 1px;
+                width: 100%;
+                display: block;
+                background-color: rgba($color: #FFFFFF, $alpha: 0.2);
+    
+            }
+        }
+        &-marketing
+        {
+            height: 20px;
+            width: 110px;
+            display: flex;
+            justify-self: center;
+            grid-area: c;
         }
         &-support
         {
-            text-align: center;
+            height: 20px;
+            width: 85px;
+            justify-self: center;
+            grid-area: d;
         }
     }
 }

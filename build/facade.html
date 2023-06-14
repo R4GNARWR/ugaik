@@ -258,31 +258,40 @@
         <section class="modal-facade__content modal-flat__content">
             <button class="modal-close"></button>
             <div class="modal-facade__content-left">
-                <a href="" class="btn btn-primary btn-block">Назад</a>
+                <a href="" class="btn btn-primary d-md-block d-inline-block">Назад</a>
             </div>
             <div class="modal-facade__content-img">
-                <div class="modal-facade__content-img__top"> 
+                <div class="modal-facade__content-img__top d-md-flex d-none"> 
                     <div class="cvartal">Квартал XX,</div>
                     <div class="info">Этаж 2, Подъезд 1, Помещение 00</div>
                 </div>
+                <div class="modal-facade__content-img__top d-md-none d-flex"> 
+                    <div class="title">Помещение №00</div>
+                    <div class="price">Цена: 5.900.000₽ </div>
+                </div>
                 <div class="modal-facade__content-img__floor">
                     <img src="img/flat.png" alt="">
-                </svg>
+                </div>
             </div>
-        </div>
-        <div class="modal-flat__view">
+        <div class="modal-flat__view d-md-flex d-none">
             <button class="modal-flat__view-item chosen">2D</button>
             <button class="modal-flat__view-item">3D</button>
         </div>
         <div class="modal-facade__content-right">
-            <div style="height: 20rem"></div>
+            <div class="d-md-block d-none" style="height: 20rem"></div>
             <div class="modal-flat__info">
-                <div class="modal-flat__info-number">Помещение <span>№00</span></div>
+                <div class="modal-flat__info-number d-md-block d-none">Помещение <span>№00</span></div>
                 <ul class="modal-flat__info-list">
+
                     <li>Цена: <span class="big">2.6 млн.₽</span></li>
-                    <li>Комнат: <span></span>2</li>
-                    <li>Площадь: <span></span>XX м<sup>2</sup></li>
+                    <li>Квартал: <span>Лесное</span></li>
+                    <li>Подъезд: <span>Ж</span></li>
+                    <li class="d-md-none d-inline-block">Помещение №<span>00</span></li>
+                    <li>Назначение помещения: <span>Офисное</span></li>
+                    <li>Комнат: <span>2</span></li>
+                    <li>Площадь: <span>XX м<sup>2</sup></span></li>
                     <li>Жилая площадь: <span>ХХ м<sup>2</sup></span></li>
+                    <li>Сдача: <span>2024</span></li>
                 </ul>
             </div>
             <div class="btn-wrap">
@@ -298,42 +307,106 @@
 </div>
 				
 
-<section class="facade-plan py-50" style="background-color: #5C7635;">
-    <div class="container" >
-        <div class="facade-plan__top">
-            <div class="dropdown">
-                <button class="facade-plan__cvartal-chose dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  <div class="content">
-                    <div class="icon">
-                        <img src="img/solnechniy.svg" alt="">
-                    </div>
-                    <div class="info">
-                        <div class="title">СОЛНЕЧНЫЙ</div>
-                        <div class="description">Квартал</div>
-                    </div>
-                  </div>
-                </button>
-                <ul class="dropdown-menu facade-plan__cvartal-list">
-                  <li><a href="#">РУЧЬИ</a></li>
-                  <li><a href="#">ПАРКОВЫЙ</a></li>
-                  <li><a href="#">ЦВЕТОЧНЫЙ</a></li>
-                </ul>
-              </div>
-            <a href="" class="btn btn-primary">Выбор по параметрам</a>
+<section class="facade-plan py-50 d-md-block d-none" style="background-color: #5C7635;">
+  <div class="container" >
+    <div class="facade-plan__top">
+      <div class="dropdown">
+        <button class="facade-plan__cvartal-chose dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <div class="content">
+            <div class="icon">
+              <img src="img/solnechniy.svg" alt="">
+            </div>
+            <div class="info">
+              <div class="title">СОЛНЕЧНЫЙ</div>
+              <div class="description">Квартал</div>
+            </div>
+          </div>
+        </button>
+        <ul class="dropdown-menu facade-plan__cvartal-list">
+          <li><a href="#">РУЧЬИ</a></li>
+          <li><a href="#">ПАРКОВЫЙ</a></li>
+          <li><a href="#">ЦВЕТОЧНЫЙ</a></li>
+        </ul>
+      </div>
+      <a href="" class="btn btn-primary">Выбор по параметрам</a>
+    </div>
+    <div class="facade-plan__text">Выберите дом</div>
+    <div class="facade-plan">
+      <div class="facade-plan__wrap">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" width="1280" height="725" viewBox="0 0 2078 1200">
+          <image width="2078" heigth="1200" href="img/plan.png"></image>
+          <path d="M544,790 L579,869 L1203,875 L1206,802 L1204,734 L668,712 L718,629 L1191,695 L1193,514 L624,474 Z"  fill="#FFB800" class="facade-plan__path" ></path>
+            <g id="" class="" transform="matrix(1,0,0,1,0,0)">
+              
+              <text font-family="Futura New" font-size="26" text-anchor="middle" x="0" y="18" font-weight="bold" fill="#ffffff" dy=".3em">
+                <tspan>2</tspan>
+              </text>
+              <path id="circle" fill="#FDDEB2" stroke="#492E16" d="M-18.5 20a18.5 18.5 0 1 0 37 0a18.5 18.5 0 1 0 -37 0" />
+
+            </g>
+          </svg>
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            
+          </svg>
         </div>
-        <div class="facade-plan__text">Выберите дом</div>
-        <div class="facade-plan">
-            <div class="facade-plan__wrap">
-                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" width="1280" height="725" viewBox="0 0 2078 1200">
-                    <image width="2078" heigth="1200" href="img/plan.png"></image>
-                    <path d="M544,790 L579,869 L1203,875 L1206,802 L1204,734 L668,712 L718,629 L1191,695 L1193,514 L624,474 Z"  fill="#FFB800" class="facade-plan__path" >
-                    </svg>
-                </div>
-                
+        
+      </div>
+    </div>
+  </section>
+				<section class="d-md-none d-block py-100">
+    <div class="container">
+        <h1>
+            Выберите дом с коммерческой недвижимостью:
+        </h1>
+        <hr class="divider">
+        <div class="tab-container_facadeMobile " id="progressTabs">
+            <div class="tab active"
+            onclick="
+            toggleTabs(this, document.querySelector('#progressTabs'));
+            changeContentSlide(document.querySelector('#mobileGenplan') ,document.querySelector('.facadeMobile_slides'))
+            ">
+                На генплане
+            </div>
+
+            <div class="tab"
+            onclick="
+                toggleTabs(this, document.querySelector('#progressTabs'));
+                changeContentSlide(document.querySelector('#mobileList'), document.querySelector('.facadeMobile_slides'))
+            ">
+                Список домов
             </div>
         </div>
-    </section>
+        <hr class="divider">
+        <div class="facadeMobile_slides">
+            <div class="content-slide" style="display: block;" id="mobileGenplan">
+                <p>Генплан:</p> 
+                <div class="facadeMobile__genplan">
+                    <img src="img/mobileGenplan.svg" alt="">
+                    <svg viewBox="0 0 280 369" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        
+                    </svg>
+                </div>
+            </div>
+            <div class="content-slide" style="display: none;" id="mobileList">
+                <p>Дома:</p>
+                <div class="facadeMobile__houseList">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="facadeMobile__houseList-item" style="background-image: url('img/house.png');">
+                                <div class="facadeMobile__houseList-item__title">дом №1</div>
+                                <div class="facadeMobile__houseList-item__price">от 2.6 млн.₽</div>
+                                <a data-fancybox data-src="#flatModal" class="link"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+
+            
+    </div>
+</section>
 			</section>
 			<!-- content wrap end -->
 		</div>

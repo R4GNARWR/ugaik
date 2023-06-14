@@ -83,3 +83,40 @@
 
 }
 
+@media (max-width: 768px) { 
+    .modal-flat
+    {
+        &__info
+        {
+            margin: 20px 0 40px 0;
+            span
+            {
+                color: #333333;
+                font-size: 14px;
+                line-height: 18px;
+                font-weight: 700;
+                &.big
+                {
+                    font-size: 14px;
+                    line-height: 18px;
+                }
+            }
+            &-list
+            {
+                row-gap: 0;
+                li
+                {
+                    font-size:14px;
+                    font-weight: 400;
+                    padding: 5px 0;
+                }
+                li:nth-child(odd)
+                {
+                    background-color: rgba(255, 255, 255, 0.5);
+                }
+            }
+    
+        }
+    }
+
+}

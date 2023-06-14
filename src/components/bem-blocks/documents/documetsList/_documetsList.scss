@@ -27,6 +27,7 @@
 .documents-list
 {
     margin-top: 10rem;
+    font-family: 'Futura New Book';
     &__header
     {
         display: grid;
@@ -67,6 +68,7 @@
         line-height: 2.9rem;
         position: relative;
         color: #333333;
+        transition: .3s;
         & > *
         {
             position: relative;
@@ -83,6 +85,10 @@
             background-color: #FFFFFF;
             opacity: 0.2;
             z-index: 10;
+        }
+        &:hover
+        {
+            background-color: #FFFFFF;
         }
         &-content
         {
@@ -132,6 +138,7 @@
         {
             padding: 4px 0;
             font-size: 12px;
+            line-height: 1.3em;
             &-content
             {
                 grid-template-columns: 1fr;

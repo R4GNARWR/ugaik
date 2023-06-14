@@ -146,6 +146,7 @@ p,
 {
 	margin-top: 3rem;
 }
+
 .mt-50
 {
 	margin-top: 5rem;
@@ -203,6 +204,10 @@ p,
 .bg-primary
 {
 	background-color: var(--primary) !important;
+}
+.mh-100
+{
+	min-height: 100vh;
 }
 
 
@@ -375,6 +380,10 @@ p,
 	.pb-100
 	{
 		padding-bottom: 50px;
+	}
+	.mt-md-30-strict
+	{
+		margin-top: 30px;
 	}
 }
 
