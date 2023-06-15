@@ -5,10 +5,14 @@
     flex-direction: column;
     width: 300px;
     background-color: #492E16;
-    padding: 50px 40px 45px;
+    padding: 5rem 4rem 4.5rem;
+    overflow-y: scroll;
+    &::-webkit-scrollbar { width: 0; }
+    &{ -ms-overflow-style: none; }
+    &{ overflow: -moz-scrollbars-none; }
     &__nav
     {
-
+        margin-bottom: 4rem;
         padding-bottom: 2px;
         display: flex;
         flex-direction: column;
@@ -50,8 +54,8 @@
     {
         display: flex;
         flex-direction: column;
-        row-gap: 27px;
-        margin-bottom: 41px;
+        row-gap: 2.7rem;
+        margin-bottom: 4rem;
         &-logo
         {
             width: 100%;
@@ -128,19 +132,20 @@
         }
     }
 }
-
 @media (max-width:1200px) {
     .side-menu
     {
         padding: 20px 20px 65px 49px;
-        position: fixed;
+        position: absolute;
         right: 0;
         top: 60px;
         width: 252px;
         height: 650px;
+        max-height: calc(100vh - 10px);
         align-items: flex-end;
         display: none;
         z-index: 999;
+        overflow-y: scroll;
         &.active
         {
             display: flex;
