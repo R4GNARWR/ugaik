@@ -118,6 +118,11 @@
         }
         
     }   
+    .btn
+    {
+        position: relative;
+        z-index: 400;
+    }
 }
 
 @media (max-width: 768px) {
