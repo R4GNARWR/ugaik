@@ -18,14 +18,20 @@
                     Вид:
                 </div>
                 <div class="filter-top__right-type">
-                    <svg class="active" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg
+                    class=" changeFlatVisual active"
+                    onclick="changeFlatsVisual(this, document.querySelector('#flatsChess'))"
+                    width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect x="5" y="5" width="13" height="13" rx="2" fill=""/>
                         <rect x="5" y="22" width="13" height="13" rx="2" fill=""/>
                         <rect x="22" y="5" width="13" height="13" rx="2" fill=""/>
                         <rect x="22" y="22" width="13" height="13" rx="2" fill=""/>
                     </svg>
 
-                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg
+                    class="changeFlatVisual"
+                    onclick="changeFlatsVisual(this, document.querySelector('#flatsList'))"
+                    width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect x="5" y="5" width="30" height="4" rx="2" fill=""/>
                         <rect x="5" y="14" width="30" height="4" rx="2" fill=""/>
                         <rect x="5" y="22" width="30" height="4" rx="2" fill=""/>
@@ -34,43 +40,81 @@
                 </div>
             </div>
         </div>
-        <div class="filter-legend">
-            <div class="filter-legend__item text-start">
-                План
-            </div>
-            <div class="filter-legend__item">
-                Комнат
-            </div>
-            <div class="filter-legend__item">
-                Этаж
-            </div>
-            <div class="filter-legend__item">
-                Площадь
-            </div>
-            <div class="filter-legend__item text-end">
-                Стоимость
+        <!-- Шахматка -->
+        <div class="flat-visual" id="flatsChess">
+            <div class="row mt-30 pb-100">
+                <div class="col-lg-4 col-6">
+                    <div class="flat-card">
+                        <div class="flat-card__top d-md-none d-flex">
+                            <div class="flat-card__top-square">48.8 м2</div>
+                            <div class="flat-card__top-rooms">2-комн.</div>
+                        </div>
+                        <div class="flat-card__img">
+                            <img src="img/flat.png" alt="">
+                        </div>
+                        <div class="flat-card__info">
+                            <div class="flat-card__info-row">
+                                <div class="flat-card__info-title">Квартал</div>
+                                <div class="flat-card__info-underline"></div>
+                                <div class="flat-card__info-text">«Лесное»</div>
+                            </div>
+                            <div class="flat-card__info-row">
+                                <div class="flat-card__info-title">Подъезд</div>
+                                <div class="flat-card__info-underline"></div>
+                                <div class="flat-card__info-text">Ж</div>
+                            </div>
+                        </div>
+                        <div class="flat-card__bottom d-md-none d-block">
+                            <div class="flat-card__bottom-price">5.9 млн.₽</div>
+                        </div>
+                        <a class="btn btn-primary btn-mini d-md-block d-none" href="" data-fancybox data-src="#flatModal">Заказать звонок</a>
+                    </div>
+                </div>
+    
             </div>
         </div>
-        <div class="row mt-30 pb-100">
-            <div class="col-12">
-                <div class="flat-card inline">
-                    <div class="flat-card__img">
-                        <img src="img/flat.webp" alt="">
-                    </div>
-                    <div class="flat-card__prop">
-                        1 - квартира
-                    </div>
-                    <div class="flat-card__prop">
-                        3
-                    </div>
-                    <div class="flat-card__prop">
-                        34.4м2
-                    </div>
-                    <div class="flat-card__prop justify-content-end">
-                        от 2 200 000₽
+        <!-- Список -->
+        <div class="flat-visual d-none" id="flatsList">
+            <div class="filter-legend">
+                <div class="filter-legend__item text-start">
+                    План
+                </div>
+                <div class="filter-legend__item">
+                    Комнат
+                </div>
+                <div class="filter-legend__item">
+                    Этаж
+                </div>
+                <div class="filter-legend__item">
+                    Площадь
+                </div>
+                <div class="filter-legend__item text-end">
+                    Стоимость
+                </div>
+            </div>
+            <div class="row mt-30 pb-100">
+                <div class="col-12">
+                    <div class="flat-card inline">
+                        <div class="flat-card__img">
+                            <img src="img/flat.webp" alt="">
+                        </div>
+                        <div class="flat-card__prop">
+                            1 - квартира
+                        </div>
+                        <div class="flat-card__prop">
+                            3
+                        </div>
+                        <div class="flat-card__prop">
+                            34.4м2
+                        </div>
+                        <div class="flat-card__prop justify-content-end">
+                            от 2 200 000₽
+                        </div>
+                        <a href="#" class="link" data-fancybox data-src="#flatModal"></a>
                     </div>
                 </div>
             </div>
         </div>
+
     </div>
 </section>

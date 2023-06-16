@@ -3,19 +3,34 @@ const menuBtn = document.querySelector('.menu-btn');
 const sideMenu = document.querySelector('.side-menu');
 const callorderButtons = document.querySelectorAll('[data-modal]')
 const closeButtons = document.querySelectorAll('.modal-close');
+const flatVisualContainers = document.querySelectorAll('.flat-visual');
+const flatVisualChangeButons = document.querySelectorAll('.changeFlatVisual');
 
 Fancybox.defaults.closeButton = false;
 
+function addClass(element, className)
+{
 
-
-
+    if(!element.classList.contains(className))
+    {
+        element.classList.add(className);
+    }
+    
+}
+function removeClass(element, className)
+{
+    if(element.classList.contains(className))
+    {
+        element.classList.remove(className);
+    }
+}
 function toggleClass(element, className)
 {
     if(element.classList.contains(className))
     {
-        element.classList.remove(className)
+        element.classList.remove(className);
     } else {
-        element.classList.add(className)
+        element.classList.add(className);
     }
 }
 
@@ -66,6 +81,36 @@ function changeContentSlide(slideToChange , slidesContainer)
         });
     }
     
+}
+
+function changeFlatsVisual(pressedButton, visual)
+{
+    if(flatVisualContainers && visual)
+    {
+        flatVisualContainers.forEach((container) => {
+            if(container === visual)
+            {
+                removeClass(container, 'd-none')
+            }
+            else
+            {
+                addClass(container, 'd-none')
+            }
+        })
+    }
+    if(flatVisualChangeButons && pressedButton)
+    {
+        flatVisualChangeButons.forEach((iteratedButton)=> {
+            if(iteratedButton === pressedButton)
+            {
+                addClass(iteratedButton, 'active');
+            } else {
+                removeClass(iteratedButton, 'active');
+            }
+        })
+
+    }
+
 }
 Fancybox.bind("[data-fancybox]", {
     // Your custom options

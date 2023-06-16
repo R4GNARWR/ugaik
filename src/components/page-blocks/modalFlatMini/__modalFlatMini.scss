@@ -1,0 +1,13 @@
+.modal-flat__mini
+{
+    .side-menu
+    {
+        display: none;
+    }
+}
+@media (min-width: 1800px) {
+    .modal-flat__mini
+    {
+        max-width: 1600px;
+    }
+}

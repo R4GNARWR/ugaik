@@ -25,8 +25,13 @@
         column-gap: 3rem;
         &-type
         {
+
             display: flex;
             column-gap: 3rem;
+            svg
+            {
+                cursor: pointer;
+            }
             & svg rect
             {
                 fill: #B19F86;
@@ -44,6 +49,7 @@
     background-color: #FFFFFF;
     padding: 3rem;
     border-radius: 40px;
+    position: relative;
     &__top
     {
         justify-content: space-between;
